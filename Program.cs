@@ -29,7 +29,9 @@ namespace gyakorlas
             public int SumThree(int num1, int num2, int num3)
             {
                 // TODO : Implement sum of three numbers
-                throw new NotImplementedException();
+                int osszeg = num1 + num2 + num3;
+                return osszeg;
+
             }
 
             /// <summary>
