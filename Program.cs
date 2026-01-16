@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿
+using System.Net;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace gyakorlas
@@ -49,7 +50,7 @@ namespace gyakorlas
                 }
                 else
                 {
-                    
+
                     return num2;
                 }
             }
@@ -65,10 +66,18 @@ namespace gyakorlas
             /// <returns>A string response</returns>
             public string FortuneCookie()
             {
-                int num = new Random().Next(0, 5);
-                // TODO : Return fortune cookie response based on random number
-                throw new NotImplementedException();
+                string[] fortunes =
+                {
+                    "Your future looks bright",
+                    "I see love in your future",
+                    "Maybe you better stay home today",
+                    "You will have fame and fortune",
+                    "Happiness you will have"
+                };
+
+                return fortunes[new Random().Next(0, fortunes.Length)];
             }
+
 
             /// <summary>
             /// Returns a response depending upon month's value.
