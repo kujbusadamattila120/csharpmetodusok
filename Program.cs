@@ -15,6 +15,7 @@ namespace gyakorlas
             /// <param name="num">The number to be squared</param>
             /// <returns>The square of num</returns>
             public int Square(int num)
+                //TODOSzabi feladata
             {
                 int eredmeny = num * num;
                 return eredmeny;
@@ -29,7 +30,7 @@ namespace gyakorlas
             /// <returns>The sum of num1, num2, and num3</returns>
             public int SumThree(int num1, int num2, int num3)
             {
-                // TODO : Implement sum of three numbers
+                // TODO  Szabi feladata
                 int osszeg = num1 + num2 + num3;
                 return osszeg;
 
@@ -43,7 +44,7 @@ namespace gyakorlas
             /// <returns>The smaller value</returns>
             public int Smaller(int num1, int num2)
             {
-                //TODO Ádám
+                //TODO Ádám feladata
                 if (num1 < num2)
                 {
                     return num1;
@@ -65,7 +66,7 @@ namespace gyakorlas
             /// </summary>
             /// <returns>A string response</returns>
             public string FortuneCookie()
-            {
+            { //Szabi feladata
                 string[] fortunes =
                 {
                     "Your future looks bright",
@@ -89,9 +90,25 @@ namespace gyakorlas
             /// <param name="month">The numerical month of the year</param>
             /// <returns>A string response</returns>
             public string Season(int month)
+
             {
-                // TODO : Return season based on month value
-                throw new NotImplementedException();
+                //Ádám feladata
+                if (month >= 1 && month <= 3)
+                {
+                    return "winter";
+                }
+                else if (month >= 4 && month <= 6)
+                {
+                    return "spring"; 
+                }
+                else if (month >= 7 && month <= 9)
+                {
+                    return "summer"; 
+                }
+                else
+                {
+                    return "fall";
+                }
             }
 
             /// <summary>
