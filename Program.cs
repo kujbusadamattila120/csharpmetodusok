@@ -1,5 +1,4 @@
-﻿
-using System.Net;
+﻿using System.Net;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace gyakorlas
@@ -15,7 +14,7 @@ namespace gyakorlas
             /// <param name="num">The number to be squared</param>
             /// <returns>The square of num</returns>
             public int Square(int num)
-                //TODOSzabi feladata
+            //TODOSzabi feladata
             {
                 int eredmeny = num * num;
                 return eredmeny;
@@ -99,11 +98,11 @@ namespace gyakorlas
                 }
                 else if (month >= 4 && month <= 6)
                 {
-                    return "spring"; 
+                    return "spring";
                 }
                 else if (month >= 7 && month <= 9)
                 {
-                    return "summer"; 
+                    return "summer";
                 }
                 else
                 {
@@ -119,10 +118,14 @@ namespace gyakorlas
             /// <param name="num">Number used in comparison</param>
             /// <returns>The string "even" or the string "odd"</returns>
             public string EvenOdd(int num)
+            //TODO SZabi feladata
             {
-                // TODO : Determine if number is even or odd
-                throw new NotImplementedException();
+                if (num % 2 == 0)
+                    return "even";
+                else
+                    return "odd";
             }
+
 
             public static void Main(string[] args)
             {
@@ -172,13 +175,3 @@ namespace gyakorlas
     }
 
 
-
-
-
-
-
-
-
-
-
-}
